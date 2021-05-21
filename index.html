@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tasks For Today</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,300&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <nav id="nav">
+      <p>
+        Your tasks for <span class="date" id="date"></span>&#45;<span
+          id="month"
+          class="date"
+        ></span
+        >&#45;<span id="year" class="date"></span
+        ><span id="day" class="date"></span>
+      </p>
+    </nav>
+
+    <div id="main">
+      <span class="action">
+        <span id="input">
+          <input type="text" value= "" id="inp" placeholder="What to do?" />
+        </span>
+        <span id="button">
+          <button id="btn" onclick="create()">Create</button>
+        </span>
+        <span id="button1">
+          <button id="btn1" >Edit</button>
+        </span>
+      </span>
+      <ul id="list"></ul>
+      
+    </div>
+  </body>
+  <script src="work.js"></script>
+</html>

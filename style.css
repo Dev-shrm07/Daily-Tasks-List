@@ -1,0 +1,235 @@
+* {
+  padding: 0%;
+  margin: 0%;
+  font-family: "Roboto", sans-serif;
+}
+
+/* styling of the navigation bar  */
+#nav {
+  display: flex;
+  height: 10vh;
+  background-color: rgb(12, 12, 12);
+  background-size: cover;
+  color: white;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5em;
+  padding: 0.8em;
+  box-sizing: border-box;
+  position: relative;
+  opacity: 0.75;
+  width: 100%;
+  
+}
+.date {
+  color: white;
+  font-size: 0.9em;
+  margin: 5px;
+}
+
+/* styling the background of the main content  */
+#main {
+  width: 100%;
+  /* height: 100vh; */
+}
+body {
+  background: url("bg2.jpg") no-repeat center center;
+  background-attachment: fixed;
+  background-size: 100%;
+  background-size: cover;
+}
+#main {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
+  box-sizing: border-box;
+}
+
+/* styling the action  */
+
+#btn {
+  padding: 0.1em 0.4em 0.1em 0.1em;
+  box-sizing: border-box;
+  border-top: 0;
+  border-left: 2px rgb(105, 105, 105);
+  border-right: 0;
+  border-bottom: 0;
+  font-size: 1.7rem;
+  background-color: white;
+  height: 3rem;
+  background-color: rgb(73, 68, 61);
+  color: white;
+  opacity: 0.8;
+  outline: none;
+}
+#btn1 {
+  padding: 0.1em 0.4em 0.1em 0.1em;
+  box-sizing: border-box;
+  border-top: 0;
+  border-left: 2px rgb(105, 105, 105);
+  border-right: 0;
+  border-bottom: 0;
+  font-size: 1.7rem;
+  background-color: white;
+  height: 3rem;
+  background-color: rgb(73, 68, 61);
+  color: white;
+  opacity: 0.8;
+  outline: none;
+  display: none;
+}
+#inp {
+  font-size: 1.7rem;
+  padding-left: 0.7em;
+  border: 0;
+  outline: none;
+  height: 3rem;
+  box-sizing: border-box;
+  background-color: rgb(73, 68, 61);
+  color: white;
+  opacity: 0.8;
+}
+#btn:hover {
+  background-color: rgb(39, 37, 34);
+}
+#btn1:hover {
+  background-color: rgb(39, 37, 34);
+}
+.action {
+  /* display: grid;
+  grid-gap: 0;
+  grid-template-columns: 3fr 1fr ; */
+  display: flex;
+  margin-top: 6rem;
+  box-sizing: border-box;
+  margin-bottom: 3rem;
+}
+/* styling of the lis element  */
+
+.todo {
+  margin: 1.1rem;
+  border: 2px solid black;
+  padding: 0.8em;
+  display: flex;
+  flex-direction: row;
+  box-sizing: border-box;
+}
+.text {
+  color: black;
+  margin: 0.3em 1.3em 0.3em 0.2em;
+  font-size: 1.4rem;
+  font-weight: bolder;
+}
+
+/* utility classes  */
+
+li {
+  list-style: none;
+}
+
+/* styling of logos  */
+
+img {
+  height: 25px;
+  width: 35px;
+  transition-property: all;
+  transition-duration: 0.06s;
+
+  margin-top: 0.48em;
+}
+
+img[src="edit.png"] {
+  margin-right: 1.5em;
+  margin-left: 2.2em;
+}
+img:hover {
+  transform: scale(1.2);
+  margin-top: 0.3em;
+}
+
+/* making the navbar responsive  */
+
+@media only screen and (max-width:570px){
+  #nav{
+    font-size: 1.2em;
+  }
+  #inp{
+    font-size: 1.4rem;
+  }
+  #btn{
+    font-size: 1.4rem;
+  }
+  .text{
+    font-size: 1.2rem;
+  }
+}
+@media only screen and (max-width:502px){
+  #nav{
+    font-size: 1.1rem;
+  }
+  #inp{
+    font-size: 1.1rem;
+  }
+  #btn{
+    font-size: 1.1rem;
+  }
+  .text{
+    font-size: 0.9rem;
+  }
+
+}
+@media only screen and (max-width:382px){
+  #nav{
+    font-size: 0.9em;
+  }
+  #inp{
+    font-size: 1rem;
+  }
+  #btn{
+    font-size: 1rem;
+  }
+  .text{
+    font-size: 0.7rem;
+  }
+  img{
+    height: 20px;
+    width: 25px;
+  }
+}
+@media only screen and (max-width:346px){
+  #nav{
+    font-size: 0.7rem;
+  }
+  #inp{
+    font-size: 0.9rem;
+  }
+  #btn{
+    font-size: 0.9rem;
+  }
+  .text{
+    font-size: 0.6rem;
+  }
+  img{
+    height: 10px;
+    width: 15px;
+  }
+}
+@media only screen and (max-width:322px){
+  #nav{
+    font-size: 13px;
+  }
+  #inp{
+    font-size: 14px;
+  }
+  #btn{
+    font-size: 14px;
+  }
+  .text{
+    font-size: 8px;
+  }
+  img{
+    height: 10px;
+    width: 15px;
+  }
+}
