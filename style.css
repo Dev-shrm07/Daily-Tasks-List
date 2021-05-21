@@ -180,6 +180,7 @@ img:hover {
   img{
     height: 15px;
     width: 20px;
+    margin-top: 0.28em;
   }
 
 }
@@ -199,6 +200,7 @@ img:hover {
   img{
     height: 20px;
     width: 25px;
+    margin-top: 0.21em;
   }
 }
 @media only screen and (max-width:346px){
@@ -217,6 +219,7 @@ img:hover {
   img{
     height: 10px;
     width: 15px;
+    margin-top: 0.17em;
   }
 }
 @media only screen and (max-width:322px){
@@ -235,5 +238,6 @@ img:hover {
   img{
     height: 10px;
     width: 15px;
+    margin-top: 0.098
   }
 }
